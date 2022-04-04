@@ -278,8 +278,45 @@
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" title="Guess" style="plain" id="6PF-3L-Rch"/>
+                        <barButtonItem key="rightBarButtonItem" title="Guess" style="plain" id="6PF-3L-Rch">
+                            <connections>
+                                <action selector="guessButtonTapped:" destination="BYZ-38-t0r" id="c04-nj-hWz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="guessTextField" destination="FEY-sX-JD2" id="T0m-q4-8bU"/>
+                        <outletCollection property="guess1Labels" destination="OST-le-5x5" collectionClass="NSMutableArray" id="FFU-YY-Q8j"/>
+                        <outletCollection property="guess1Labels" destination="3Zf-WS-CpS" collectionClass="NSMutableArray" id="vF0-iN-gey"/>
+                        <outletCollection property="guess1Labels" destination="MFF-aZ-UXf" collectionClass="NSMutableArray" id="WKs-XE-8Sp"/>
+                        <outletCollection property="guess1Labels" destination="c1z-tn-3Du" collectionClass="NSMutableArray" id="iIQ-dA-wXz"/>
+                        <outletCollection property="guess1Labels" destination="gAe-NX-4vk" collectionClass="NSMutableArray" id="ufh-4h-k9Z"/>
+                        <outletCollection property="guess2Labels" destination="4x7-Ot-yN3" collectionClass="NSMutableArray" id="Gts-FZ-RvW"/>
+                        <outletCollection property="guess2Labels" destination="SZo-lt-6EN" collectionClass="NSMutableArray" id="4Hg-kt-SEp"/>
+                        <outletCollection property="guess2Labels" destination="cXs-h5-ppL" collectionClass="NSMutableArray" id="yGZ-jv-Efi"/>
+                        <outletCollection property="guess2Labels" destination="2w7-xK-SFA" collectionClass="NSMutableArray" id="l0C-c6-JqF"/>
+                        <outletCollection property="guess2Labels" destination="GdQ-p1-Imq" collectionClass="NSMutableArray" id="jp9-dr-mSp"/>
+                        <outletCollection property="guess3Labels" destination="dza-aU-mqf" collectionClass="NSMutableArray" id="KOQ-Wd-qOw"/>
+                        <outletCollection property="guess3Labels" destination="EHU-D9-3NI" collectionClass="NSMutableArray" id="X60-vZ-q7O"/>
+                        <outletCollection property="guess3Labels" destination="zEO-W5-TML" collectionClass="NSMutableArray" id="YKs-s9-OYk"/>
+                        <outletCollection property="guess3Labels" destination="IJY-ay-K7f" collectionClass="NSMutableArray" id="mEW-72-JRy"/>
+                        <outletCollection property="guess3Labels" destination="0Sg-pY-Vz0" collectionClass="NSMutableArray" id="Lvd-LA-SGu"/>
+                        <outletCollection property="guess4Labels" destination="HqE-bk-kds" collectionClass="NSMutableArray" id="c8G-nI-Qlu"/>
+                        <outletCollection property="guess4Labels" destination="9uE-PU-Zvg" collectionClass="NSMutableArray" id="X3v-Q9-KBl"/>
+                        <outletCollection property="guess4Labels" destination="b7S-ju-7ME" collectionClass="NSMutableArray" id="eZT-Qy-IUw"/>
+                        <outletCollection property="guess4Labels" destination="Ps4-wm-E4m" collectionClass="NSMutableArray" id="lWs-VD-ucF"/>
+                        <outletCollection property="guess4Labels" destination="jgL-Xb-Acv" collectionClass="NSMutableArray" id="wVl-tV-Uiv"/>
+                        <outletCollection property="guess5Labels" destination="ig2-MW-Dma" collectionClass="NSMutableArray" id="6XE-xe-Bu5"/>
+                        <outletCollection property="guess5Labels" destination="3m5-ds-OOf" collectionClass="NSMutableArray" id="aIe-23-9tY"/>
+                        <outletCollection property="guess5Labels" destination="Ptn-Rt-xrT" collectionClass="NSMutableArray" id="5Jg-sn-iud"/>
+                        <outletCollection property="guess5Labels" destination="iAd-sU-23c" collectionClass="NSMutableArray" id="oe9-5s-FjV"/>
+                        <outletCollection property="guess5Labels" destination="Q0Z-7h-LQ6" collectionClass="NSMutableArray" id="beX-oi-anH"/>
+                        <outletCollection property="guess6Labels" destination="pMK-lR-BL0" collectionClass="NSMutableArray" id="ZWa-dQ-u46"/>
+                        <outletCollection property="guess6Labels" destination="RtZ-le-sIe" collectionClass="NSMutableArray" id="IWM-qR-2XO"/>
+                        <outletCollection property="guess6Labels" destination="rUM-7l-ktz" collectionClass="NSMutableArray" id="cvX-sD-ggg"/>
+                        <outletCollection property="guess6Labels" destination="UxB-66-odR" collectionClass="NSMutableArray" id="bxk-to-wUk"/>
+                        <outletCollection property="guess6Labels" destination="t8e-e3-oQB" collectionClass="NSMutableArray" id="7ZG-4d-AGP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
