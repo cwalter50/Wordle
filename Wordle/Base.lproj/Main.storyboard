@@ -276,7 +276,7 @@
                             <rect key="frame" x="128" y="5" width="158" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
                         </textField>
                         <barButtonItem key="rightBarButtonItem" title="Guess" style="plain" id="6PF-3L-Rch">
                             <connections>

@@ -40,7 +40,34 @@ class ViewController: UIViewController
     @IBAction func guessButtonTapped(_ sender: UIBarButtonItem)
     {
         
-        fillInGuess(guess: guessTextField.text!, labels: guess1Labels)
+        let guess = guessTextField.text!.uppercased()
+        
+        if isGuessValid(guess: guess) == true
+        {
+            switch guessCount {
+            case 0:
+                fillInGuess(guess: guess, labels: guess1Labels)
+            case 1:
+                fillInGuess(guess: guess, labels: guess2Labels)
+            case 2:
+                fillInGuess(guess: guess, labels: guess3Labels)
+            case 3:
+                fillInGuess(guess: guess, labels: guess4Labels)
+            case 4:
+                fillInGuess(guess: guess, labels: guess5Labels)
+            case 5:
+                fillInGuess(guess: guess, labels: guess6Labels)
+            default:
+                print("ran out of guesses")
+            }
+            guessCount += 1
+            
+        }
+        else
+        {
+            // show alert that tells user guess is not valid.
+        }
+        
     }
     
     func fillInGuess(guess: String, labels: [UILabel])
@@ -48,6 +75,19 @@ class ViewController: UIViewController
         for i in labels.indices
         {
             labels[i].text = guess[i]
+        }
+    }
+    
+    func isGuessValid(guess: String) -> Bool
+    {
+        // if word is 5 letters long and a real word
+        if guess.count == 5 && WordList.allPossibleWords.contains(guess.lowercased())
+        {
+            return true
+        }
+        else
+        {
+            return false
         }
     }
     
