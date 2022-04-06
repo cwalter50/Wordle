@@ -10,7 +10,7 @@ import Foundation
 public class WordList
 {
     
-    static var wordleWords: [String] = ["syrup", "table", "puppy", "force", "cyber", "erupt", "error", "craft"]
+    static var wordleWords: [String] = ["syrup", "table", "puppy", "force", "cyber", "erupt", "error", "craft", "boats"]
     
     static var allPossibleWords: [String] = [
         "aargh", "abaca", "aback", "abaft", "abase",
